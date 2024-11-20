@@ -1,0 +1,1069 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+>
+<title></title>
+<style type="text/css"
+>
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi31 { color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165000 { color: #FFA500; }
+.ansi38-255165009 { color: #FFA509; }
+.ansi38-255238088 { color: #FFEE58; }
+.ansi38-013099040 { color: #0D6328; }
+.ansi38-255165009 { color: #FFA509; }
+.ansi38-255238088 { color: #FFEE58; }
+.ansi38-013099040 { color: #0D6328; }
+.ansi38-013099040 { color: #0D6328; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content"
+>
+Script started on 2024-11-20 01:55:32+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+P;HTML|
+;           (set_option_value  prolog false)
+
+P;HTML|
+;           (set_option_value  compat auto)
+
+P;HTML|
+;           (set_option_value  compatio true)
+P;HTML|
+;            (is_cmd_option  prescan halt --halt=true true)
+P;HTML|
+;            (set_option_value  halt true)
+P;HTML|
+;            (is_cmd_option  prescan stdin --stdin=tty tty)
+P;HTML|
+;             (set_option_value  stdin tty)
+P;HTML|
+;            (is_cmd_option  prescan stdout --stdout=tty tty)
+P;HTML|
+;             (set_option_value  stdout tty)
+P;HTML|
+;            (is_cmd_option  prescan stderr --stderr=tty tty)
+P;HTML|
+;             (set_option_value  stderr tty)
+P;HTML|
+;            (set_option_value  prolog false)
+P;HTML|
+;            (set_option_value  compat auto)
+P;HTML|
+;            (set_option_value  compatio true)
+P;HTML|
+;          (is_cmd_option  execute python --python=enable enable)
+P;HTML|
+;           (set_option_value  python enable)
+P;HTML|
+;          (is_cmd_option  execute timeout --timeout=40 40)
+P;HTML|
+;           (set_option_value  timeout 40)
+P;HTML|
+;           (is_cmd_option  execute output --output=./reports/tests_output/baseline-compat-2024-11-20T00:35:29/ ./reports/tests_output/baseline-compat-2024-11-20T00:35:29/)
+P;HTML|
+;           (set_option_value  output ./reports/tests_output/baseline-compat-2024-11-20T00:35:29/)
+P;HTML|
+;           (is_cmd_option  execute html --html true)
+P;HTML|
+;            (set_option_value  html true)
+P;HTML|
+;           (is_cmd_option  execute test --test true)
+P;HTML|
+;            (set_option_value  test true)
+
+; (load_metta_file  &self tests/features/polymorphic-types/examples-quants.metta)
+P;HTML|
+;                         (track_load_into_file  /home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta)
+P;HTML|
+;                                          (load_answer_file  /home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta.answers /home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta)
+P;HTML|
+;                                           (= 1  "Doing: timeout --foreground --kill-after=5 --signal=SIGINT 61 time metta /opt/logicmoo_workspace/packs_sys/logicmoo_opencog/MeTTa/hyperon-wam/reports/features/polymorphic-types/examples-quants.metta")
+P;HTML|
+;                                           (= 1  "[(* (degree-producer-1) (/ pi 180)), (degree-producer-1), (* (degree-producer-1) (/ pi 180)), (degree-producer-1)]")
+P;HTML|
+;                                           (= 2  "[(* (radian-producer-1) (/ pi 180)), (radian-producer-1), (* (radian-producer-1) (/ pi 180)), (radian-producer-1)]")
+P;HTML|
+;                                           (= 3  "[(assertNotEqual (* (degree-producer-1) (/ pi 180)) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (radian-producer-1)), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (radian-producer-1)), (assertNotEqual (degree-producer-1) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (degree-producer-1) (radian-producer-1)), (assertNotEqual (degree-producer-1) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (degree-producer-1) (radian-producer-1)), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (radian-producer-1)), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (* (degree-producer-1) (/ pi 180)) (radian-producer-1)), (assertNotEqual (degree-producer-1) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (degree-producer-1) (radian-producer-1)), (assertNotEqual (degree-producer-1) (* (radian-producer-1) (/ pi 180))), (assertNotEqual (degree-producer-1) (radian-producer-1))]")
+P;HTML|
+;                                           (= 4  "0.13user 0.01system 0:00.15elapsed 99%CPU (0avgtext+0avgdata 33940maxresident)k")
+P;HTML|
+;                                           (= 4  "0inputs+0outputs (0major+3708minor)pagefaults 0swaps")
+P;HTML|
+;                                          (load_answer_file  /home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta.answers /home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta)
+<span class="ansi38-255165000"
+>  (: calculate-rotation-angle 
+    (-> AngleInDegreesForRotation AngleInDegrees))
+</span><span class="ansi38-255165000"
+>  (= 
+    (calculate-rotation-angle $angleInDegreesForRotation) 
+    (if 
+      (> $angleInDegreesForRotation 360) 
+      (- $angleInDegreesForRotation 360) $angleInDegreesForRotation))
+</span><span class="ansi38-255165000"
+>  (: print-and-return-fruit-count 
+    (-> SomethingWithAmount CountedAmount))
+</span><span class="ansi38-255165000"
+>  (= 
+    (print-and-return-fruit-count $apples) 
+    (print ("Amount of fruit =" $apples)) 
+    (as-count $apples))
+</span><span class="ansi38-255165000"
+>  (: compare-apples-oranges 
+    (-> Apples Oranges String))
+</span><span class="ansi38-255165000"
+>  (= 
+    (compare-apples-oranges $appleCount $orangeCount) 
+    (if 
+      (> $appleCount $orangeCount) "More Apples" 
+      (if 
+        (< $appleCount $orangeCount) "More Oranges" "Equal Amount")))
+</span>;;;; Declares a function 'degrees-to-radians' that converts angles from degrees to radians
+<span class="ansi38-255165000"
+>  (: degrees-to-radians 
+    (-> AngleInDegrees AngleInRadians))
+</span>;;;; Defines the 'degrees-to-radians' function
+;;;; Multiplies the angle in degrees by (pi/180) to convert it to radians
+<span class="ansi38-255165000"
+>  (= 
+    (degrees-to-radians $angleInDegrees) 
+    (* $angleInDegrees 
+      (/ pi 180)))
+</span>;;;; Declares the 'any-to-radians' function to accept an angle in degrees
+<span class="ansi38-255165000"
+>  (: any-to-radians 
+    (-> AngleInDegrees AngleInRadians))
+</span>;;;; Converts angle from degrees to radians using the 'degrees-to-radians' function
+<span class="ansi38-255165000"
+>  (= 
+    (any-to-radians $angle) 
+    (degrees-to-radians $angle))
+</span>;;;; Declares the 'any-to-radians' function to accept an angle in radians
+<span class="ansi38-255165000"
+>  (: any-to-radians 
+    (-> AngleInRadians AngleInRadians))
+</span>;;;; Returns the angle in radians directly without conversion
+<span class="ansi38-255165000"
+>  (= 
+    (any-to-radians $angle) $angle)
+</span>;;;; Declares a type 'radian-producer' that represents a function returning AngleInRadians
+<span class="ansi38-255165000"
+>  (: radian-producer 
+    (-> AngleInRadians))
+</span>;;;; Declares a type 'degree-producer' that represents a function returning AngleInDegrees
+<span class="ansi38-255165000"
+>  (: degree-producer 
+    (-> AngleInDegrees))
+</span>;;;; Defines 'degree-producer-1' as a constant function returning 1 degree
+<span class="ansi38-255165000"
+>  (= degree-producer-1 1.0)
+</span>;;;; Defines 'radian-producer-1' as a constant function returning 1 radian
+<span class="ansi38-255165000"
+>  (= radian-producer-1 1.0)
+</span>;;;; Invokes 'any-to-radians' with 'degree-producer-1', expecting conversion to radians
+<span class="ansi38-255165009"
+>;; In file as:  
+</span><span class="ansi1 ansi38-255238088"
+>  !(any-to-radians (degree-producer-1))
+</span>;; To unit test case:
+<span class="ansi38-013099040"
+>  !(assertEqualToResult 
+    (any-to-radians (degree-producer-1)) 
+    ( (* 
+        (degree-producer-1) 
+        (/ pi 180)) 
+      (degree-producer-1) 
+      (* 
+        (degree-producer-1) 
+        (/ pi 180)) 
+      (degree-producer-1)))
+
+</span>[
+
+;<h3 id="POLYMORPHIC-TYPES.EXAMPLES-QUANTS.01"
+>;; POLYMORPHIC-TYPES.EXAMPLES-QUANTS.01</h3>
+; 
+; EVAL TEST
+; took 0.003 secs. (3.45 milliseconds) 
+
+  !(assertEqualToResult 
+    (any-to-radians (degree-producer-1)) 
+    ( (* 
+        (degree-producer-1) 
+        (/ pi 180)) 
+      (degree-producer-1) 
+      (* 
+        (degree-producer-1) 
+        (/ pi 180)) 
+      (degree-producer-1)))
+
+<span class="ansi31"
+>  (loonit_failureR  
+    (equal_enough_for_test  
+      ( (* 
+          (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+      ( (* 
+          (degree-producer-1) 
+          (/ pi 180)) 
+        (degree-producer-1) 
+        (* 
+          (degree-producer-1) 
+          (/ pi 180)) 
+        (degree-producer-1))))
+</span>
+Deterministic: ((Error  (got  ((* (degree-producer-1) 0.017453292519943295) (degree-producer-1))) (expected  ((* (degree-producer-1) (/ pi 180)) (degree-producer-1) (* (degree-producer-1) (/ pi 180)) (degree-producer-1)))))
+((Error  (got  ((* (degree-producer-1) 0.017453292519943295) (degree-producer-1))) (expected  ((* (degree-producer-1) (/ pi 180)) (degree-producer-1) (* (degree-producer-1) (/ pi 180)) (degree-producer-1)))))]
+;;;; Invokes 'any-to-radians' with 'radian-producer-1', expecting no conversion
+<span class="ansi38-255165009"
+>;; In file as:  
+</span><span class="ansi1 ansi38-255238088"
+>  !(any-to-radians (radian-producer-1))
+</span>;; To unit test case:
+<span class="ansi38-013099040"
+>  !(assertEqualToResult 
+    (any-to-radians (radian-producer-1)) 
+    ( (* 
+        (radian-producer-1) 
+        (/ pi 180)) 
+      (radian-producer-1) 
+      (* 
+        (radian-producer-1) 
+        (/ pi 180)) 
+      (radian-producer-1)))
+
+</span>[
+
+;<h3 id="POLYMORPHIC-TYPES.EXAMPLES-QUANTS.02"
+>;; POLYMORPHIC-TYPES.EXAMPLES-QUANTS.02</h3>
+; 
+; EVAL TEST
+; took 0.003 secs. (3.26 milliseconds) 
+
+  !(assertEqualToResult 
+    (any-to-radians (radian-producer-1)) 
+    ( (* 
+        (radian-producer-1) 
+        (/ pi 180)) 
+      (radian-producer-1) 
+      (* 
+        (radian-producer-1) 
+        (/ pi 180)) 
+      (radian-producer-1)))
+
+<span class="ansi31"
+>  (loonit_failureR  
+    (equal_enough_for_test  
+      ( (* 
+          (radian-producer-1) 0.017453292519943295) (radian-producer-1)) 
+      ( (* 
+          (radian-producer-1) 
+          (/ pi 180)) 
+        (radian-producer-1) 
+        (* 
+          (radian-producer-1) 
+          (/ pi 180)) 
+        (radian-producer-1))))
+</span>
+Deterministic: ((Error  (got  ((* (radian-producer-1) 0.017453292519943295) (radian-producer-1))) (expected  ((* (radian-producer-1) (/ pi 180)) (radian-producer-1) (* (radian-producer-1) (/ pi 180)) (radian-producer-1)))))
+((Error  (got  ((* (radian-producer-1) 0.017453292519943295) (radian-producer-1))) (expected  ((* (radian-producer-1) (/ pi 180)) (radian-producer-1) (* (radian-producer-1) (/ pi 180)) (radian-producer-1)))))]
+;;;; Asserts that the result of converting 1 degree to radians is not equal to 1 radian
+<span class="ansi38-013099040"
+>  !(assertNotEqual 
+    (any-to-radians (degree-producer-1)) 
+    (any-to-radians (radian-producer-1)))
+
+</span>[
+
+;<h3 id="POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03"
+>;; POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03</h3>
+; 
+; EVAL TEST
+; took 0.006 secs. (5.96 milliseconds) 
+
+  !(assertNotEqual 
+    (any-to-radians (degree-producer-1)) 
+    (any-to-radians (radian-producer-1)))
+
+
+
+  (failed  once 
+    (arg  2 
+      (\+  
+        (equal_enough  
+          ( (* 
+              (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+          ( (* 
+              (radian-producer-1) 0.017453292519943295) (radian-producer-1)))) $_38498))
+
+
+
+
+  (failed  once 
+    (arg  2 
+      (\+  
+        (equal_enough  
+          ( (* 
+              (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+          ( (* 
+              (radian-producer-1) 0.017453292519943295) (radian-producer-1)))) $_38498))
+
+
+^  <span class="ansi1 ansi32"
+>Call: </span>(245) [user] call(user:once, user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _38498))
+^  <span class="ansi1 ansi32"
+>Call: </span>(246) [user] once(user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _38498))
+   <span class="ansi1 ansi32"
+>Call: </span>(247) [system] arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _38498)
+^  <span class="ansi1 ansi31"
+>Fail: </span>(245) [system] call(user:once, user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _38498))
+^  <span class="ansi1 ansi32"
+>Call: </span>(245) [bugger] bugger:mquietly_if(true, rtrace:pop_tracer)
+   <span class="ansi1 ansi32"
+>Call: </span>(247) [system] var(rtrace:pop_tracer)
+   <span class="ansi1 ansi31"
+>Fail: </span>(247) [system] var(rtrace:pop_tracer)
+^  <span class="ansi1 ansi32"
+>Call: </span>(249) [system] setup_call_cleanup('$notrace'(_46838, _46840), once(rtrace:retract(t_l:tracer_reset(_46828))), '$restore_trace'(_46838, _46840))
+^  <span class="ansi1 ansi32"
+>Call: </span>(250) [system] sig_atomic(system:'$notrace'(_46838, _46840))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(249) [system] setup_call_cleanup(system:'$notrace'(3, -1), system:once(rtrace:retract(t_l:tracer_reset(tAt_normal))), system:'$restore_trace'(3, -1))
+^  <span class="ansi1 ansi32"
+>Call: </span>(249) [rtrace] tAt(false, 271, 271, false)
+<span class="ansi31"
+>  (loonit_failureR  
+    (\+  
+      (equal_enough  
+        ( (* 
+            (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+        ( (* 
+            (radian-producer-1) 0.017453292519943295) (radian-producer-1)))))
+</span>
+
+  (failed  once 
+    (arg  2 
+      (\+  
+        (equal_enough  
+          ( (* 
+              (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+          ( (* 
+              (radian-producer-1) 0.017453292519943295) (radian-producer-1)))) $_54926))
+
+
+
+
+  (failed  once 
+    (arg  2 
+      (\+  
+        (equal_enough  
+          ( (* 
+              (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+          ( (* 
+              (radian-producer-1) 0.017453292519943295) (radian-producer-1)))) $_54926))
+
+
+^  <span class="ansi1 ansi32"
+>Call: </span>(256) [user] call(user:once, user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _54926))
+^  <span class="ansi1 ansi32"
+>Call: </span>(257) [user] once(user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _54926))
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _54926)
+^  <span class="ansi1 ansi31"
+>Fail: </span>(256) [system] call(user:once, user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _54926))
+^  <span class="ansi1 ansi32"
+>Call: </span>(256) [bugger] bugger:mquietly_if(true, rtrace:pop_tracer)
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] var(rtrace:pop_tracer)
+   <span class="ansi1 ansi31"
+>Fail: </span>(258) [system] var(rtrace:pop_tracer)
+^  <span class="ansi1 ansi32"
+>Call: </span>(260) [system] setup_call_cleanup('$notrace'(_63266, _63268), once(rtrace:retract(t_l:tracer_reset(_63256))), '$restore_trace'(_63266, _63268))
+^  <span class="ansi1 ansi32"
+>Call: </span>(261) [system] sig_atomic(system:'$notrace'(_63266, _63268))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(260) [system] setup_call_cleanup(system:'$notrace'(3, -1), system:once(rtrace:retract(t_l:tracer_reset(tAt_normal))), system:'$restore_trace'(3, -1))
+^  <span class="ansi1 ansi32"
+>Call: </span>(260) [rtrace] tAt(false, 271, 271, false)
+
+
+  (failed  once 
+    (write_pass_fail  
+      (assertNotEqual 
+        (any-to-radians (degree-producer-1)) 
+        (any-to-radians (radian-producer-1))) FAIL 
+      (\+  
+        (equal_enough  
+          ( (* 
+              (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+          ( (* 
+              (radian-producer-1) 0.017453292519943295) (radian-producer-1))))))
+
+
+
+
+  (failed  once 
+    (write_pass_fail  
+      (assertNotEqual 
+        (any-to-radians (degree-producer-1)) 
+        (any-to-radians (radian-producer-1))) FAIL 
+      (\+  
+        (equal_enough  
+          ( (* 
+              (degree-producer-1) 0.017453292519943295) (degree-producer-1)) 
+          ( (* 
+              (radian-producer-1) 0.017453292519943295) (radian-producer-1))))))
+
+
+^  <span class="ansi1 ansi32"
+>Call: </span>(243) [user] call(user:once, user:write_pass_fail([assertNotEqual, ['any-to-radians', ['degree-producer-1']], ['any-to-radians', ['radian-producer-1']]], 'FAIL', \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']])))
+^  <span class="ansi1 ansi32"
+>Call: </span>(244) [user] once(user:write_pass_fail([assertNotEqual, ['any-to-radians', ['degree-producer-1']], ['any-to-radians', ['radian-producer-1']]], 'FAIL', \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']])))
+^  <span class="ansi1 ansi32"
+>Call: </span>(245) [user] write_pass_fail([assertNotEqual, ['any-to-radians', ['degree-producer-1']], ['any-to-radians', ['radian-producer-1']]], 'FAIL', \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]))
+^  <span class="ansi1 ansi32"
+>Call: </span>(246) [user] must_det_ll(loonit_number(_71776))
+^  <span class="ansi1 ansi32"
+>Call: </span>(247) [user] once(user:loonit_number(_71776))
+^  <span class="ansi1 ansi32"
+>Call: </span>(248) [user] loonit_number(_71776)
+   <span class="ansi1 ansi32"
+>Call: </span>(249) [$syspreds] flag(loonit_test_number, _71776, _71776)
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] _71776==_71776
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] _71776==_71776
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] get_flag(loonit_test_number, _71776)
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] get_flag(loonit_test_number, 3)
+   <span class="ansi1 ansi32"
+>Exit: </span>(249) [$syspreds] flag(loonit_test_number, 3, 3)
+   <span class="ansi1 ansi32"
+>Call: </span>(249) [system] 3>0
+   <span class="ansi1 ansi32"
+>Exit: </span>(249) [system] 3>0
+^  <span class="ansi1 ansi32"
+>Exit: </span>(248) [user] loonit_number(3)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(247) [system] once(user:loonit_number(3))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(246) [user] must_det_ll(user:loonit_number(3))
+^  <span class="ansi1 ansi32"
+>Call: </span>(246) [user] must_det_ll(get_test_name(3, _86008))
+^  <span class="ansi1 ansi32"
+>Call: </span>(247) [user] once(user:get_test_name(3, _86008))
+^  <span class="ansi1 ansi32"
+>Call: </span>(248) [user] get_test_name(3, _86008)
+   <span class="ansi1 ansi32"
+>Call: </span>(249) [system] nb_current(loading_file, _89062)
+   <span class="ansi1 ansi32"
+>Exit: </span>(249) [system] nb_current(loading_file, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(249) [system] P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>\==[]
+   <span class="ansi1 ansi32"
+>Exit: </span>(249) [system] P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>\==[]
+^  <span class="ansi1 ansi32"
+>Call: </span>(249) [user] make_test_name(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>, 3, _86008)
+^  <span class="ansi1 ansi32"
+>Call: </span>(250) [user] ensure_basename(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>, _126772)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [files_ex] files_ex:directory_file_path('.', _131808, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] nonvar('.')
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] nonvar('.')
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] nonvar(_138622)
+   <span class="ansi1 ansi31"
+>Fail: </span>(252) [system] nonvar(_138622)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] nonvar(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] nonvar(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] nonvar('.')
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] nonvar('.')
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] ('.')==('.')
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] ('.')==('.')
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] is_absolute_file_name(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] is_absolute_file_name(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] sub_atom('.', _164452, _164454, 0, /)
+   <span class="ansi1 ansi31"
+>Fail: </span>(252) [system] sub_atom('.', _165480, _165482, 0, /)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atom_concat('.', /, _166384)
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] atom_concat('.', /, ./)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atom_concat(./, _168426, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi31"
+>Fail: </span>(252) [system] atom_concat(./, _168426, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi31"
+>Fail: </span>(251) [files_ex] files_ex:directory_file_path('.', _178380, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(250) [user] ensure_basename(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] file_base_name(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>, _191974)
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] file_base_name(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>, P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [files_ex] files_ex:directory_file_path(_205656, P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] nonvar(_205656)
+   <span class="ansi1 ansi31"
+>Fail: </span>(251) [system] nonvar(_205656)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] nonvar(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Exit: </span>(251) [system] nonvar(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] nonvar(_205656)
+   <span class="ansi1 ansi31"
+>Fail: </span>(251) [system] nonvar(_205656)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] nonvar(P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Exit: </span>(251) [system] nonvar(P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] atom_concat(_238036, P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Exit: </span>(251) [system] atom_concat('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/', P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [files_ex] files_ex:strip_trailing_slash('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/', _205656)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atom_concat(_256602, /, '/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/')
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] atom_concat('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types', /, '/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/')
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] '/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types'\==''
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] '/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types'\==''
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] _205656='/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types'
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] '/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types'='/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types'
+   <span class="ansi1 ansi32"
+>Exit: </span>(251) [files_ex] files_ex:strip_trailing_slash('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/', '/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types')
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [files_ex] files_ex:directory_file_path('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types', P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>, P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] file_base_name('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types', _272498)
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] file_base_name('/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types', 'polymorphic-types')
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] file_name_extension(_274532, _274658, P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] file_name_extension('examples-quants', metta, P;HTML|<span class="pl-atom"
+>'examples-quants.metta'</span>)
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] string_upper('polymorphic-types', _284294)
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] string_upper('polymorphic-types', "POLYMORPHIC-TYPES")
+   <span class="ansi1 ansi32"
+>Call: </span>(250) [system] string_upper('examples-quants', _286338)
+   <span class="ansi1 ansi32"
+>Exit: </span>(250) [system] string_upper('examples-quants', "EXAMPLES-QUANTS")
+^  <span class="ansi1 ansi32"
+>Call: </span>(250) [user] string_replace("EXAMPLES-QUANTS", "_", "-", _288394)
+^  <span class="ansi1 ansi32"
+>Call: </span>(251) [user] symbolic_list_concat(_289420, "_", "EXAMPLES-QUANTS")
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atomic_list_concat(_289420, "_", "EXAMPLES-QUANTS")
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] atomic_list_concat(['EXAMPLES-QUANTS'], "_", "EXAMPLES-QUANTS")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(251) [user] symbolic_list_concat(['EXAMPLES-QUANTS'], "_", "EXAMPLES-QUANTS")
+^  <span class="ansi1 ansi32"
+>Call: </span>(251) [user] symbolic_list_concat(['EXAMPLES-QUANTS'], "-", _288394)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atomic_list_concat(['EXAMPLES-QUANTS'], "-", _288394)
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] atomic_list_concat(['EXAMPLES-QUANTS'], "-", 'EXAMPLES-QUANTS')
+^  <span class="ansi1 ansi32"
+>Exit: </span>(251) [user] symbolic_list_concat(['EXAMPLES-QUANTS'], "-", 'EXAMPLES-QUANTS')
+^  <span class="ansi1 ansi32"
+>Exit: </span>(250) [user] string_replace("EXAMPLES-QUANTS", "_", "-", 'EXAMPLES-QUANTS')
+^  <span class="ansi1 ansi32"
+>Call: </span>(250) [user] string_replace("POLYMORPHIC-TYPES", "_", "-", _298624)
+^  <span class="ansi1 ansi32"
+>Call: </span>(251) [user] symbolic_list_concat(_299650, "_", "POLYMORPHIC-TYPES")
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atomic_list_concat(_299650, "_", "POLYMORPHIC-TYPES")
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] atomic_list_concat(['POLYMORPHIC-TYPES'], "_", "POLYMORPHIC-TYPES")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(251) [user] symbolic_list_concat(['POLYMORPHIC-TYPES'], "_", "POLYMORPHIC-TYPES")
+^  <span class="ansi1 ansi32"
+>Call: </span>(251) [user] symbolic_list_concat(['POLYMORPHIC-TYPES'], "-", _298624)
+   <span class="ansi1 ansi32"
+>Call: </span>(252) [system] atomic_list_concat(['POLYMORPHIC-TYPES'], "-", _298624)
+   <span class="ansi1 ansi32"
+>Exit: </span>(252) [system] atomic_list_concat(['POLYMORPHIC-TYPES'], "-", 'POLYMORPHIC-TYPES')
+^  <span class="ansi1 ansi32"
+>Exit: </span>(251) [user] symbolic_list_concat(['POLYMORPHIC-TYPES'], "-", 'POLYMORPHIC-TYPES')
+^  <span class="ansi1 ansi32"
+>Exit: </span>(250) [user] string_replace("POLYMORPHIC-TYPES", "_", "-", 'POLYMORPHIC-TYPES')
+^  <span class="ansi1 ansi32"
+>Call: </span>(250) [user] bugger:wots(_308842, format('~`0t~d~2|', [3]))
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] nb_current('$wots_stack', _309884)
+   <span class="ansi1 ansi31"
+>Fail: </span>(251) [system] nb_current('$wots_stack', _309884)
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] _311918=[]
+   <span class="ansi1 ansi32"
+>Exit: </span>(251) [system] []=[]
+   <span class="ansi1 ansi32"
+>Call: </span>(251) [system] current_output(_313952)
+   <span class="ansi1 ansi32"
+>Exit: </span>(251) [system] current_output(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Call: </span>(251) [bugger] locally_each:locally(nb_setval('$wots_stack', [<stream>(0x7f717db35160)]), woto(string(_308842), user:format('~`0t~d~2|', [3])))
+^  <span class="ansi1 ansi32"
+>Call: </span>(252) [locally_each] locally_each:wtl(bugger, nb_setval('$wots_stack', [<stream>(0x7f717db35160)]), bugger:woto(string(_308842), user:format('~`0t~d~2|', [3])), bugger:each_call_cleanup)
+   <span class="ansi1 ansi32"
+>Call: </span>(253) [system] nb_current('$wots_stack', _318086)
+   <span class="ansi1 ansi31"
+>Fail: </span>(253) [system] nb_current('$wots_stack', _318086)
+^  <span class="ansi1 ansi32"
+>Call: </span>(253) [bugger] call_cleanup((nb_setval('$wots_stack', [<stream>(0x7f717db35160)]), bugger:woto(string(_308842), user:format('~`0t~d~2|', [3])), nb_delete('$wots_stack')), nb_delete('$wots_stack'))
+   <span class="ansi1 ansi32"
+>Call: </span>(255) [$syspreds] nb_setval('$wots_stack', [<stream>(0x7f717db35160)])
+   <span class="ansi1 ansi32"
+>Call: </span>(256) [system] duplicate_term([<stream>(0x7f717db35160)], _322208)
+   <span class="ansi1 ansi32"
+>Exit: </span>(256) [system] duplicate_term([<stream>(0x7f717db35160)], [<stream>(0x7f717db35160)])
+   <span class="ansi1 ansi32"
+>Call: </span>(256) [system] nb_linkval('$wots_stack', [<stream>(0x7f717db35160)])
+   <span class="ansi1 ansi32"
+>Exit: </span>(256) [system] nb_linkval('$wots_stack', [<stream>(0x7f717db35160)])
+   <span class="ansi1 ansi32"
+>Exit: </span>(255) [$syspreds] nb_setval('$wots_stack', [<stream>(0x7f717db35160)])
+^  <span class="ansi1 ansi32"
+>Call: </span>(255) [bugger] bugger:woto(string(_308842), user:format('~`0t~d~2|', [3]))
+^  <span class="ansi1 ansi32"
+>Call: </span>(256) [bugger] once((use_tty(string(_308842), _328330);_328330=true))
+^  <span class="ansi1 ansi32"
+>Call: </span>(258) [bugger] bugger:use_tty(string(_308842), _328330)
+   <span class="ansi1 ansi32"
+>Call: </span>(259) [system] compound(string(_308842))
+   <span class="ansi1 ansi32"
+>Exit: </span>(259) [system] compound(string(_308842))
+   <span class="ansi1 ansi32"
+>Call: </span>(259) [system] stream_property(current_output, tty(_328330))
+   <span class="ansi1 ansi32"
+>Call: </span>(260) [system] nonvar(current_output)
+   <span class="ansi1 ansi32"
+>Exit: </span>(260) [system] nonvar(current_output)
+   <span class="ansi1 ansi32"
+>Call: </span>(260) [system] nonvar(tty(_328330))
+   <span class="ansi1 ansi32"
+>Exit: </span>(260) [system] nonvar(tty(_328330))
+   <span class="ansi1 ansi32"
+>Exit: </span>(259) [system] stream_property(current_output, tty(true))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(258) [bugger] bugger:use_tty(string(_308842), true)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(256) [system] once(bugger:(use_tty(string(_308842), true);true=true))
+^  <span class="ansi1 ansi32"
+>Call: </span>(256) [bugger] bugger:get_stream_setup(_340532)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(256) [bugger] bugger:get_stream_setup(true)
+^  <span class="ansi1 ansi32"
+>Call: </span>(256) [bugger] bugger:woto_tty(string(_308842), true, (true, user:format('~`0t~d~2|', [3])))
+^  <span class="ansi1 ansi32"
+>Call: </span>(257) [bugger] bugger:with_output_to_each(string(_308842), (set_stream_ignore(current_output, tty(true)), bugger:(true, user:format('~`0t~d~2|', [3]))))
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] compound(string(_308842))
+   <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] compound(string(_308842))
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] compound_name_arity(string(_308842), _346800, 0)
+   <span class="ansi1 ansi31"
+>Fail: </span>(258) [system] compound_name_arity(string(_308842), _347820, 0)
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] string(_308842)=..[_348718, _348724]
+   <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] string(_308842)=..[string, _308842]
+^  <span class="ansi1 ansi32"
+>Call: </span>(258) [bugger] bugger:stream_u_type(string)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(258) [bugger] bugger:stream_u_type(string)
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] current_output(_352796)
+   <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] current_output(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] _354822=set_output_safe(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] set_output_safe(<stream>(0x7f717db35160))=set_output_safe(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] _356860=mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))
+   <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))=mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))
+   <span class="ansi1 ansi32"
+>Call: </span>(258) [system] _358906=mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)
+   <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)=mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)
+^  <span class="ansi1 ansi32"
+>Call: </span>(258) [bugger] call_cleanup(trusted_redo_call_cleanup(mfs_start(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))), (bugger:(set_stream_ignore(current_output, tty(true)), bugger:(true, user:format('~`0t~d~2|', [3]))), mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)), mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)), mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842))
+   <span class="ansi1 ansi32"
+>Call: </span>(260) [system] _362016=mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842))
+   <span class="ansi1 ansi32"
+>Exit: </span>(260) [system] mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842))=mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842))
+^  <span class="ansi1 ansi32"
+>Call: </span>(260) [each_call_cleanup] setup_call_cleanup(bugger:mfs_start(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))), ((bugger:(bugger:(set_stream_ignore(current_output, tty(true)), bugger:(true, user:format('~`0t~d~2|', [3]))), mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)), deterministic(_364068)), (notrace(_364068==true)->!;mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)), notrace(nb_setarg(1, mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)), true));bugger:mfs_start(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))), notrace(nb_setarg(1, mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)), bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842))), notrace(fail))), mquietly(bugger:mfs_end(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)))
+^  <span class="ansi1 ansi32"
+>Call: </span>(261) [system] sig_atomic(bugger:mfs_start(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160)))))
+^  <span class="ansi1 ansi32"
+>Call: </span>(263) [bugger] bugger:mfs_start(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))))
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] compound(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))))
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] compound(mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))))
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] arg(2, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _369242)
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] arg(2, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), string)
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] arg(3, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _371284)
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] arg(3, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _356868)
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] arg(4, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _373326)
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] arg(4, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), set_output_safe)
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] _375368=mfs(_375372, string, _375376, set_output_safe, _375380)
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] mfs(_375372, string, _375376, set_output_safe, _375380)=mfs(_375372, string, _375376, set_output_safe, _375380)
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] is_stream(_356868)
+   <span class="ansi1 ansi31"
+>Fail: </span>(264) [system] is_stream(_356868)
+^  <span class="ansi1 ansi32"
+>Call: </span>(264) [bugger] bugger:new_mfs(mfs(_375372, string, _375376, set_output_safe, _375380))
+   <span class="ansi1 ansi32"
+>Call: </span>(265) [memory_file] memory_file:new_memory_file(_375372)
+   <span class="ansi1 ansi32"
+>Exit: </span>(265) [memory_file] memory_file:new_memory_file(<memory_file>(0x55a808327140))
+   <span class="ansi1 ansi32"
+>Call: </span>(265) [memory_file] memory_file:open_memory_file(<memory_file>(0x55a808327140), write, _375376, [free_on_close(true)])
+   <span class="ansi1 ansi32"
+>Exit: </span>(265) [memory_file] memory_file:open_memory_file(<memory_file>(0x55a808327140), write, <stream>(0x55a8081e0c20), [free_on_close(true)])
+^  <span class="ansi1 ansi32"
+>Exit: </span>(264) [bugger] bugger:new_mfs(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, _375380))
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] nb_setarg(1, mfs(_356864, string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), <memory_file>(0x55a808327140))
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] nb_setarg(1, mfs(<memory_file>(0x55a808327140), string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), <memory_file>(0x55a808327140))
+   <span class="ansi1 ansi32"
+>Call: </span>(264) [system] nb_setarg(3, mfs(<memory_file>(0x55a808327140), string, _356868, set_output_safe, set_output_safe(<stream>(0x7f717db35160))), <stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] nb_setarg(3, mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), <stream>(0x55a8081e0c20))
+^  <span class="ansi1 ansi32"
+>Call: </span>(264) [bugger] bugger:set_output_safe(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi32"
+>Call: </span>(266) [system] set_output(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi32"
+>Exit: </span>(266) [system] set_output(<stream>(0x55a8081e0c20))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(264) [bugger] bugger:set_output_safe(<stream>(0x55a8081e0c20))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(263) [bugger] bugger:mfs_start(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(261) [system] sig_atomic(bugger:mfs_start(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160)))))
+^  <span class="ansi1 ansi32"
+>Call: </span>(262) [bugger] bugger:set_stream_ignore(current_output, tty(true))
+^  <span class="ansi1 ansi32"
+>Call: </span>(263) [bugger] ignore(notrace(catch(set_stream(current_output, tty(true)), _396778, writeln(user_error, _396778=set_stream(current_output, tty(true))))))
+^  <span class="ansi1 ansi32"
+>Call: </span>(265) [system] setup_call_cleanup('$notrace'(_397838, _397840), once(bugger:catch(set_stream(current_output, tty(true)), _396778, writeln(user_error, _396778=set_stream(current_output, tty(true))))), '$restore_trace'(_397838, _397840))
+^  <span class="ansi1 ansi32"
+>Call: </span>(266) [system] sig_atomic(system:'$notrace'(_397838, _397840))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(265) [system] setup_call_cleanup(system:'$notrace'(3, -1), system:once(bugger:catch(set_stream(current_output, tty(true)), _396778, writeln(user_error, _396778=set_stream(current_output, tty(true))))), system:'$restore_trace'(3, -1))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(263) [system] ignore(bugger:notrace(catch(set_stream(current_output, tty(true)), _396778, writeln(user_error, _396778=set_stream(current_output, tty(true))))))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(262) [bugger] bugger:set_stream_ignore(current_output, tty(true))
+^  <span class="ansi1 ansi32"
+>Call: </span>(262) [user] format('~`0t~d~2|', [3])
+^  <span class="ansi1 ansi32"
+>Exit: </span>(262) [user] format('~`0t~d~2|', [3])
+^  <span class="ansi1 ansi32"
+>Call: </span>(262) [bugger] bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), _308842)
+^  <span class="ansi1 ansi32"
+>Call: </span>(263) [bugger] ignore((is_stream(<stream>(0x55a8081e0c20)), close(<stream>(0x55a8081e0c20)), mem_handle_to_substring(<memory_file>(0x55a808327140), _406088), substring_to_type(_406088, string, _308842)))
+   <span class="ansi1 ansi32"
+>Call: </span>(265) [system] is_stream(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi32"
+>Exit: </span>(265) [system] is_stream(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi32"
+>Call: </span>(265) [system] close(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi32"
+>Exit: </span>(265) [system] close(<stream>(0x55a8081e0c20))
+^  <span class="ansi1 ansi32"
+>Call: </span>(265) [bugger] bugger:mem_handle_to_substring(<memory_file>(0x55a808327140), _406088)
+   <span class="ansi1 ansi32"
+>Call: </span>(266) [memory_file] memory_file:memory_file_to_string(<memory_file>(0x55a808327140), _406088)
+   <span class="ansi1 ansi32"
+>Exit: </span>(266) [memory_file] memory_file:memory_file_to_string(<memory_file>(0x55a808327140), "03")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(265) [bugger] bugger:mem_handle_to_substring(<memory_file>(0x55a808327140), "03")
+^  <span class="ansi1 ansi32"
+>Call: </span>(265) [bugger] bugger:substring_to_type("03", string, _308842)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(265) [bugger] bugger:substring_to_type("03", string, "03")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(263) [system] ignore(bugger:(is_stream(<stream>(0x55a8081e0c20)), close(<stream>(0x55a8081e0c20)), mem_handle_to_substring(<memory_file>(0x55a808327140), "03"), substring_to_type("03", string, "03")))
+^  <span class="ansi1 ansi32"
+>Call: </span>(263) [bugger] bugger:set_output_safe(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Call: </span>(265) [system] set_output(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Exit: </span>(265) [system] set_output(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(263) [bugger] bugger:set_output_safe(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(262) [bugger] bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")
+^  <span class="ansi1 ansi32"
+>Call: </span>(263) [system] setup_call_cleanup('$notrace'(_423428, _423430), once(each_call_cleanup:(true==true)), '$restore_trace'(_423428, _423430))
+^  <span class="ansi1 ansi32"
+>Call: </span>(264) [system] sig_atomic(system:'$notrace'(_423428, _423430))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(263) [system] setup_call_cleanup(system:'$notrace'(3, -1), system:once(each_call_cleanup:(true==true)), system:'$restore_trace'(3, -1))
+   <span class="ansi1 ansi32"
+>Call: </span>(263) [system] var(bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03"))
+   <span class="ansi1 ansi31"
+>Fail: </span>(263) [system] var(bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03"))
+^  <span class="ansi1 ansi32"
+>Call: </span>(263) [bugger] bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")
+^  <span class="ansi1 ansi32"
+>Call: </span>(264) [bugger] ignore((is_stream(<stream>(0x55a8081e0c20)), close(<stream>(0x55a8081e0c20)), mem_handle_to_substring(<memory_file>(0x55a808327140), _429606), substring_to_type(_429606, string, "03")))
+   <span class="ansi1 ansi32"
+>Call: </span>(266) [system] is_stream(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi31"
+>Fail: </span>(266) [system] is_stream(<stream>(0x55a8081e0c20))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(264) [system] ignore(bugger:(is_stream(<stream>(0x55a8081e0c20)), close(<stream>(0x55a8081e0c20)), mem_handle_to_substring(<memory_file>(0x55a808327140), _429606), substring_to_type(_429606, string, "03")))
+^  <span class="ansi1 ansi32"
+>Call: </span>(264) [bugger] bugger:set_output_safe(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Call: </span>(266) [system] set_output(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Exit: </span>(266) [system] set_output(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(264) [bugger] bugger:set_output_safe(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(263) [bugger] bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(260) [system] setup_call_cleanup(bugger:mfs_start(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160)))), each_call_cleanup:((bugger:(bugger:(set_stream_ignore(current_output, tty(true)), bugger:(true, user:format('~`0t~d~2|', [3]))), mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")), deterministic(true)), (notrace(true==true)->!;mquietly(bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")), notrace(nb_setarg(1, mquietly(bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")), true));bugger:mfs_start(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160)))), notrace(nb_setarg(1, mquietly(bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")), bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03"))), notrace(fail))), each_call_cleanup:mquietly(bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")))
+^  <span class="ansi1 ansi32"
+>Call: </span>(260) [bugger] bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")
+^  <span class="ansi1 ansi32"
+>Call: </span>(261) [bugger] ignore((is_stream(<stream>(0x55a8081e0c20)), close(<stream>(0x55a8081e0c20)), mem_handle_to_substring(<memory_file>(0x55a808327140), _440858), substring_to_type(_440858, string, "03")))
+   <span class="ansi1 ansi32"
+>Call: </span>(263) [system] is_stream(<stream>(0x55a8081e0c20))
+   <span class="ansi1 ansi31"
+>Fail: </span>(263) [system] is_stream(<stream>(0x55a8081e0c20))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(261) [system] ignore(bugger:(is_stream(<stream>(0x55a8081e0c20)), close(<stream>(0x55a8081e0c20)), mem_handle_to_substring(<memory_file>(0x55a808327140), _440858), substring_to_type(_440858, string, "03")))
+^  <span class="ansi1 ansi32"
+>Call: </span>(261) [bugger] bugger:set_output_safe(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Call: </span>(263) [system] set_output(<stream>(0x7f717db35160))
+   <span class="ansi1 ansi32"
+>Exit: </span>(263) [system] set_output(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(261) [bugger] bugger:set_output_safe(<stream>(0x7f717db35160))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(260) [bugger] bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(258) [system] call_cleanup(bugger:trusted_redo_call_cleanup(mfs_start(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160)))), (bugger:(set_stream_ignore(current_output, tty(true)), bugger:(true, user:format('~`0t~d~2|', [3]))), mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")), mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03")), bugger:mfs_end(mfs(<memory_file>(0x55a808327140), string, <stream>(0x55a8081e0c20), set_output_safe, set_output_safe(<stream>(0x7f717db35160))), "03"))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(257) [bugger] bugger:with_output_to_each(string("03"), bugger:(set_stream_ignore(current_output, tty(true)), bugger:(true, user:format('~`0t~d~2|', [3]))))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(256) [bugger] bugger:woto_tty(string("03"), true, bugger:(true, user:format('~`0t~d~2|', [3])))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(255) [bugger] bugger:woto(string("03"), user:format('~`0t~d~2|', [3]))
+   <span class="ansi1 ansi32"
+>Call: </span>(255) [system] nb_delete('$wots_stack')
+   <span class="ansi1 ansi32"
+>Exit: </span>(255) [system] nb_delete('$wots_stack')
+   <span class="ansi1 ansi32"
+>Call: </span>(255) [system] nb_delete('$wots_stack')
+   <span class="ansi1 ansi32"
+>Exit: </span>(255) [system] nb_delete('$wots_stack')
+^  <span class="ansi1 ansi32"
+>Exit: </span>(253) [system] call_cleanup(bugger:(nb_setval('$wots_stack', [<stream>(0x7f717db35160)]), bugger:woto(string("03"), user:format('~`0t~d~2|', [3])), nb_delete('$wots_stack')), bugger:nb_delete('$wots_stack'))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(252) [locally_each] locally_each:wtl(bugger, nb_setval('$wots_stack', [<stream>(0x7f717db35160)]), bugger:woto(string("03"), user:format('~`0t~d~2|', [3])), bugger:each_call_cleanup)
+^  <span class="ansi1 ansi32"
+>Exit: </span>(251) [locally_each] locally_each:locally(bugger:nb_setval('$wots_stack', [<stream>(0x7f717db35160)]), bugger:woto(string("03"), user:format('~`0t~d~2|', [3])))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(250) [bugger] bugger:wots("03", user:format('~`0t~d~2|', [3]))
+^  <span class="ansi1 ansi32"
+>Call: </span>(250) [user] format(string(_86008), "~w.~w.~w", ['POLYMORPHIC-TYPES', 'EXAMPLES-QUANTS', "03"])
+^  <span class="ansi1 ansi32"
+>Exit: </span>(250) [user] format(string("POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03"), "~w.~w.~w", ['POLYMORPHIC-TYPES', 'EXAMPLES-QUANTS', "03"])
+^  <span class="ansi1 ansi32"
+>Exit: </span>(249) [user] make_test_name(P;HTML|<span class="pl-atom"
+>'/home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta'</span>, 3, "POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(248) [user] get_test_name(3, "POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03")
+^  <span class="ansi1 ansi32"
+>Exit: </span>(247) [system] once(user:get_test_name(3, "POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03"))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(246) [user] must_det_ll(user:get_test_name(3, "POLYMORPHIC-TYPES.EXAMPLES-QUANTS.03"))
+^  <span class="ansi1 ansi32"
+>Call: </span>(246) [user] must_det_ll(arg(1, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _472330))
+^  <span class="ansi1 ansi32"
+>Call: </span>(247) [user] once(user:arg(1, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _472330))
+   <span class="ansi1 ansi32"
+>Call: </span>(248) [system] arg(1, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _472330)
+   <span class="ansi1 ansi32"
+>Exit: </span>(248) [system] arg(1, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(247) [system] once(user:arg(1, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']])))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(246) [user] must_det_ll(user:arg(1, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']])))
+^  <span class="ansi1 ansi32"
+>Call: </span>(246) [user] must_det_ll(arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _478444))
+^  <span class="ansi1 ansi32"
+>Call: </span>(247) [user] once(user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _478444))
+   <span class="ansi1 ansi32"
+>Call: </span>(248) [system] arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _478444)
+^  <span class="ansi1 ansi31"
+>Fail: </span>(247) [system] once(user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _478444))
+^  <span class="ansi1 ansi31"
+>Fail: </span>(246) [user] must_det_ll(user:arg(2, \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]), _478444))
+^  <span class="ansi1 ansi31"
+>Fail: </span>(245) [user] write_pass_fail([assertNotEqual, ['any-to-radians', ['degree-producer-1']], ['any-to-radians', ['radian-producer-1']]], 'FAIL', \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']]))
+^  <span class="ansi1 ansi31"
+>Fail: </span>(243) [system] call(user:once, user:write_pass_fail([assertNotEqual, ['any-to-radians', ['degree-producer-1']], ['any-to-radians', ['radian-producer-1']]], 'FAIL', \+equal_enough([[*, ['degree-producer-1'], 0.017453292519943295], ['degree-producer-1']], [[*, ['radian-producer-1'], 0.017453292519943295], ['radian-producer-1']])))
+^  <span class="ansi1 ansi32"
+>Call: </span>(243) [bugger] bugger:mquietly_if(true, rtrace:pop_tracer)
+   <span class="ansi1 ansi32"
+>Call: </span>(245) [system] var(rtrace:pop_tracer)
+   <span class="ansi1 ansi31"
+>Fail: </span>(245) [system] var(rtrace:pop_tracer)
+^  <span class="ansi1 ansi32"
+>Call: </span>(247) [system] setup_call_cleanup('$notrace'(_488642, _488644), once(rtrace:retract(t_l:tracer_reset(_488632))), '$restore_trace'(_488642, _488644))
+^  <span class="ansi1 ansi32"
+>Call: </span>(248) [system] sig_atomic(system:'$notrace'(_488642, _488644))
+^  <span class="ansi1 ansi32"
+>Exit: </span>(247) [system] setup_call_cleanup(system:'$notrace'(3, -1), system:once(rtrace:retract(t_l:tracer_reset(tAt_normal))), system:'$restore_trace'(3, -1))
+^  <span class="ansi1 ansi32"
+>Call: </span>(247) [rtrace] tAt(false, 271, 271, false)
+<no-results>
+
+]
+<span class="ansi32"
+>% 573,413 inferences, 0.157 CPU in 0.157 seconds (100% CPU, 3648238 Lips)
+</span>P;HTML|
+;                         (= /home/runner/work/metta-wam/metta-wam/tests/features/polymorphic-types/examples-quants.metta  0)
+<span class="ansi1"
+>LoonIt Report
+</span>------------
+<span class="ansi32"
+>Successes: 0
+</span><span class="ansi31"
+>Failures: 3
+</span><br/> <a href="#" onclick="window.history.back(); return false;"
+>Return to summaries</a><br/>
+P;HTML|
+;           (is_cmd_option  execute halt --halt=true true)
+P;HTML|
+;            (set_option_value  halt true)
+P;HTML|
+;            (is_cmd_option  execute stdin --stdin=tty tty)
+P;HTML|
+;            (set_option_value  stdin tty)
+P;HTML|
+;            (is_cmd_option  execute stdout --stdout=tty tty)
+P;HTML|
+;             (set_option_value  stdout tty)
+P;HTML|
+;            (is_cmd_option  execute stderr --stderr=tty tty)
+P;HTML|
+;             (set_option_value  stderr tty)
+P;HTML|
+;           (set_option_value  prolog false)
+P;HTML|
+;           (set_option_value  compat auto)
+P;HTML|
+;           (set_option_value  compatio true)
+<span class="ansi31"
+>  (in  
+    (maybe_halt  7) 
+    (unwind  
+      (halt  7)))
+</span>
+Script done on 2024-11-20 01:55:36+00:00 [COMMAND_EXIT_CODE="7"]
+
+</pre>
+</body>
+
+</html>
+\033[0;32mCompleted successfully (EXITCODE=7) Under 40 seconds: ./mettalog '--output=./reports/tests_output/baseline-compat-2024-11-20T00:35:29/' --timeout=40 --html --repl=false  --test "tests/features/polymorphic-types/examples-quants.metta" --halt=true\033[0m
